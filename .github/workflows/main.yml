@@ -23,25 +23,12 @@ jobs:
           
       - name: Install Dependencies
         run: npm i
-        
-      - uses: appleboy/scp-action@master
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.SSH_HOST }}
+          server: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          source: "., !node_modules"
-          target: "/home/tsunode/app/api"
-          
-      - name: Update API 
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd /home/tsunode/app/api
-            node index.js
-            
+          password: ${{ secrets.SSH_KEY }}
+    
       
