@@ -37,7 +37,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY }}
           script: |
             cd /apps_nodejs/
             npm i
