@@ -37,7 +37,6 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          port: 22
           password: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/tsunode/apps_nodejs/
