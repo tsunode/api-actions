@@ -30,7 +30,7 @@ jobs:
           server: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_KEY }}
-          server-dir: /home/tsunode/apps_nodejs/
+          server-dir: /apps_nodejs/
 
       - name: Update API 
         uses: appleboy/ssh-action@master
@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/tsunode/apps_nodejs/
+            cd /apps_nodejs/
             npm i
             pm2 start index.js
             
