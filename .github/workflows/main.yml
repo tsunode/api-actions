@@ -31,7 +31,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           source: "., !node_modules"
-          target: "~/app/api"
+          target: "/home/tsunode/app/api"
           
       - name: Update API 
         uses: appleboy/ssh-action@master
@@ -41,7 +41,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/app/api
+            cd /home/tsunode/app/api
             node index.js
             
       
