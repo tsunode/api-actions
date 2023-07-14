@@ -37,7 +37,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_KEY }}
           source: "., !node_modules"
           target: "/home/tsunode/apps_nodejs/"
           
@@ -47,7 +47,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/tsunode/apps_nodejs/
             pm2 start index.js
