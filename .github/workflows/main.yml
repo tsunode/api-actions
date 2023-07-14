@@ -30,5 +30,6 @@ jobs:
           server: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_KEY }}
+          server-dir: /home/tsunode/apps_nodejs/
     
       
