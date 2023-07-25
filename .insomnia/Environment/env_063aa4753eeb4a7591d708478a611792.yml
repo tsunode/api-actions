@@ -1,0 +1,26 @@
+_id: env_063aa4753eeb4a7591d708478a611792
+type: Environment
+parentId: wrk_e4cf632289654aa8b142ced6c0c7016c
+modified: 1684756283913
+created: 1684237061627
+name: Base Environment
+data:
+  baseURL: http://localhost:3000
+  userId1: "{% response 'body', 'req_7b47062174944a33afd98f7ca56fd850',
+    'b64::JC5pZA==::46b', 'never', 60 %}"
+  tokenUser1: "{% response 'body', 'req_f080e47d887d496882002c3be0cc0051',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+  userId2: "{% response 'body', 'req_d4d8b36b89144ddd84ca660b8c4af389',
+    'b64::JC5pZA==::46b', 'never', 60 %}"
+  tokenUser2: "{% response 'body', 'req_676f85c72853441bbdc081c8d5559f06',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+dataPropertyOrder:
+  "&":
+    - baseURL
+    - userId1
+    - tokenUser1
+    - userId2
+    - tokenUser2
+color: null
+isPrivate: false
+metaSortKey: 1684237061627
