@@ -1,0 +1,24 @@
+_id: req_265295398baa4a459ab99fac1d1692f8
+type: Request
+parentId: fld_84908fe5ea9649428e19913200ee6e0d
+modified: 1684934698259
+created: 1684847605173
+url: "{{ _.baseURL }}/musics/1bc49984-4dd3-454b-a6f4-f9580a461ef3"
+name: get one music
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.tokenUser1 }}"
+  disabled: true
+metaSortKey: -1683579963793.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
